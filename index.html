@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Fayaz Blog </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+#acd{
+  text-align: center;
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Fayaz<br>Developer</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="#About" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Interior Design</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="4.avif" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+      <!-- <img src="3.webp" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design"> -->
+      <!-- <img src=".jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs"> -->
+    </div>
+
+    <div class="w3-half">
+      <!-- <img src="1.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium"> -->
+      <!-- <img src=".jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space"> -->
+      <!-- <img src="7.jpg" style="width:95%" onclick="onClick(this)" alt="Scandinavian design"> -->
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright"></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+   <!-- About -->
+   
+
+  <!-- Services -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Services.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>As a Full Stack Web Developer, I offer a comprehensive range of services to help you build, maintain, and optimize your web applications. Whether you're starting from scratch or need to enhance an existing project, I provide end-to-end solutions that cover both the front-end and back-end aspects of web development.<br>
+    As a Full Stack Developer, I bridge the gap between front-end and back-end, ensuring that both parts of your application work seamlessly together. I focus on creating a cohesive, reliable, and scalable system that meets all of your business requirements.
+
+    End-to-End Web Application Development: From front-end design to back-end architecture, I provide a comprehensive approach.
+Version Control (Git): Utilizing Git for version control to collaborate effectively and maintain clean, organized codebases.
+Continuous Integration/Continuous Deployment (CI/CD): Automating testing, integration, and deployment to streamline workflows and ensure smoother releases.
+    </p>
+  
+  </div>
+
+  
+  <!-- About-->
+  <div class="w3-container" id="About" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>About.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1>Fayaz Ahmed</h1>
+    <p>I have completed Full stack web development course by GREAT LEARNING Course with Certified</p>
+<p>Recently Completed a comprehensive full stack web development course., equipping me with hands on experience in front-end. back-end and database management. Skilled in creating  responsive. dynamic websites and wen applications that prioritize user experince and functionality.</p>
+
+<details>
+  <summary>SKILLS</summary>
+  <summary>HTML5</summary>
+  <summary>CSS3</summary>
+  <summary>Bootstrap</summary>
+  <summary>MongoDB</summary>
+  <summary>MySQL</summary>
+</details>
+  </div>
+  </div>
+
+
+
+  
+ 
+
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Designers.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>The best team in the world.</p>
+    <p>
+      Full Stack Web Developer Services
+      
+      As a Full Stack Web Developer, I offer a comprehensive range of services to help you build, maintain, and optimize your web applications. Whether you're starting from scratch or need to enhance an existing project, I provide end-to-end solutions that cover both the front-end and back-end aspects of web development.
+      
+      My Full Stack Web Development Services Include:
+      1. Front-End Development
+      I craft engaging and intuitive user interfaces that ensure a smooth, responsive, and visually appealing experience for your users. I work with the latest front-end technologies to build the user-facing part of your web application, ensuring it is optimized for both performance and user experience.
+      
+      HTML5, CSS3, JavaScript: Core technologies for creating structured, styled, and interactive pages.
+      React.js / Angular / Vue.js: Cutting-edge JavaScript frameworks for dynamic, single-page applications (SPAs).
+      UI/UX Design: Transforming wireframes and mockups into pixel-perfect, responsive web pages.
+      Responsive Design: Mobile-first design that adapts seamlessly across devices and screen sizes.
+      Cross-Browser Compatibility: Ensuring your website looks and works great on all major browsers.
+    </p>
+    <p><b>Our designers are thoughtfully chosen</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div id="acd" class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <!-- <img src="/w3images/team2.jpg" alt="John" style="width:100%"> -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="350px" height="350px" fill="currentColor" class="bi bi-person-fill-lock" viewBox="0 0 16 16">
+          <path d="M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0m-9 8c0 1 1 1 1 1h5v-1a2 2 0 0 1 .01-.2 4.49 4.49 0 0 1 1.534-3.693Q8.844 9.002 8 9c-5 0-6 3-6 4m7 0a1 1 0 0 1 1-1v-1a2 2 0 1 1 4 0v1a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-3a1 1 0 0 0-1 1v1h2v-1a1 1 0 0 0-1-1"/>
+        </svg>
+        <div class="w3-container">
+          <h3>Fayaz Ahmed </h3>
+          <p class="w3-opacity">Owner</p>
+          <p>I have persuing final year BCA in THIRUVALLUVAR UNIVERSITY. </p>
+          <p>I'm Front-End developer</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div> -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>If you want to create a Blog Website (or) own Web (or) Business Web application to Contact me, in below my details here</p>
+    <p>follow me social media</p>  
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Plan-deatils</li>
+        <li class="w3-padding-16">5 hours support</li>
+        <li class="w3-padding-16">Basic web</li>
+        <li class="w3-padding-16">20% discount </li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per plan</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Plan-details</li>
+        <li class="w3-padding-16">24 hours support</li>
+        <li class="w3-padding-16">Basic web</li>
+        <li class="w3-padding-16">50% discount</li>
+        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity">per plan</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details  We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="#" title="Fayaz" target="_blank" class="w3-hover-opacity">FAYAZ bca</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+
+</body>
+</html>
